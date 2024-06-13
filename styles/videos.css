@@ -1,0 +1,66 @@
+.video-title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height:20px;
+}
+.author-name {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.video-stats {
+  color: rgb(96, 96, 96);
+  font-size: 12px;
+}
+
+
+.thumbnail {
+  width: 100%;
+}
+
+/* make sure to remove the inline block and width prop from the inside div classes */
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 40px;
+}
+
+ /* Default (for screen widths above 1024px) */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* For screen widths 750px to 1024px */
+@media (max-width: 1094px) and (min-width: 751px) {
+  .video-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* For screen widths 0px to 750px */
+@media (max-width: 750px) {
+  .video-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+.profile-pic {
+  width: 36px;
+  margin-top: 10px;
+  border-radius: 30px;
+  margin-left: 2px;
+}
+
+.thumbnail-div{
+  position: relative;
+}
